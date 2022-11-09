@@ -23,7 +23,7 @@ int main() {
     std::cout << "\n";
     try {
         numberAsInt = std::stoi(inputNumber);
-        if (numberAsInt < 0){
+        if (numberAsInt < 0) {
             std::cout << "This is not a positive number.";
         } else {
             do {
@@ -33,7 +33,8 @@ int main() {
             std::cout << numberAsInt << "!" << " = " << answer;
         }
     } catch (std::invalid_argument) {
-        std::cout << "Invalid input, please try again following the requirements";
+        std::cout << "Invalid input,"
+                  << " please try again following the requirements";
     }
 
     std::cout << "\n\n\nDone.\n";
